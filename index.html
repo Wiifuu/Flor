@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Flor 🌷🌷</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(#ffe6f0, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #b83280;
+      margin-bottom: 40px;
+    }
+
+    .tulip {
+      position: relative;
+      width: 120px;
+      height: 300px;
+      margin: auto;
+      animation: mover 3s infinite ease-in-out;
+    }
+
+    .stem {
+      position: absolute;
+      bottom: 0;
+      left: 58px;
+      width: 8px;
+      height: 190px;
+      background: #2f9e44;
+      border-radius: 10px;
+    }
+
+    .leaf {
+      position: absolute;
+      bottom: 70px;
+      width: 80px;
+      height: 35px;
+      background: #37b24d;
+      border-radius: 50%;
+    }
+
+    .leaf.left {
+      left: 0;
+      transform: rotate(-30deg);
+    }
+
+    .leaf.right {
+      right: 0;
+      transform: rotate(30deg);
+    }
+
+    .flower {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      width: 80px;
+      height: 100px;
+      background: #e64980;
+      border-radius: 50% 50% 40% 40%;
+    }
+
+    .petal {
+      position: absolute;
+      width: 55px;
+      height: 90px;
+      background: #f06595;
+      border-radius: 50% 50% 40% 40%;
+      top: 0;
+    }
+
+    .petal.left {
+      left: 0;
+      transform: rotate(-25deg);
+    }
+
+    .petal.right {
+      right: 0;
+      transform: rotate(25deg);
+    }
+
+    .message {
+      margin-top: 30px;
+      color: #702459;
+      font-size: 20px;
+    }
+
+    @keyframes mover {
+      0%, 100% {
+        transform: rotate(-2deg);
+      }
+      50% {
+        transform: rotate(2deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Se que no haz tenido un buen día </h1>
+    <h1>en general bonica, pero... 🌷</h1>
+
+    <div class="tulip">
+      <div class="flower"></div>
+      <div class="petal left"></div>
+      <div class="petal right"></div>
+      <div class="stem"></div>
+      <div class="leaf left"></div>
+      <div class="leaf right"></div>
+    </div>
+
+    <p class="message">Aun que no sea un regalo físico</p>
+    <p2 class="message">Espero que esta florcita te alegre un poco el día</p2>
+
+    <p class="message">Eres Hermosa y Especial Flor, tal vez no sea mucho</p>
+    <p2 class="message">Desearía que cada vez que habras esta pagina</p2>
+    <p class="message">Te alegre un poco mas tu día, porque la cree para ti Flor🌷💕</p>
+  </div>
+</body>
+</html>
